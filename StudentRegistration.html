@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./RegStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration</h1>
+      <form>
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-Binary</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+
+        <!-- Highest Academic Certificate -->
+        <div class="form-group">
+          <label for="certificate">Highest Academic Certificate:</label>
+          <select id="certificate" name="certificate" required>
+            <option value="" disabled selected>Select your certificate</option>
+            <option value="high-school">High School Certificate</option>
+            <option value="college-diploma">College Diploma</option>
+            <option value="vocational-training">
+              Vocational Training Institute Certificate
+            </option>
+            <option value="university-degree">University Degree</option>
+          </select>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <!-- Religion -->
+        <div class="form-group">
+          <label for="religion">Religion:</label>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="religion" value="christianity" />
+              Christianity</label
+            >
+            <label
+              ><input type="checkbox" name="religion" value="islam" />
+              Islam</label
+            >
+            <label
+              ><input type="checkbox" name="religion" value="hinduism" />
+              Hinduism</label
+            >
+            <label
+              ><input type="checkbox" name="religion" value="buddhism" />
+              Buddhism</label
+            >
+            <label
+              ><input type="checkbox" name="religion" value="other" />
+              Other</label
+            >
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
